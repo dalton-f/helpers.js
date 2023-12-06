@@ -2,7 +2,7 @@
 
 <br>
 
-> Streamline code | Simplify solutions
+Streamline code, Simplify solutions
 
 <br>
 
@@ -15,12 +15,15 @@ This file consists of various helper functions aimed at simplifying and streamli
 * Storage: Helpers for interacting with browser storage (localStorage/sessionStorage)
 * Math and String Operations: Functions for mathematical operations, string manipulation, formatting, and validation.
 
+Feel free to explore the extensive comments included to learn more about the functionality and usage of each helper.
+
 <br>
 
 ## Why use it?
 
 * Code Readability: Enhance the readability of your codebase by replacing repetitive methods into easy-to-understand functions with descriptive names.
 * Efficiency: Save time and effort by utilizing pre-built helper functions for common tasks, eliminating the need to rewrite repetitive code segments.
+* Consistency: Ensures your codebase is consistent, helping with maintainability and allowing for easier contributions
 
 <br>
 
