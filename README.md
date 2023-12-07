@@ -12,9 +12,9 @@ to do
 
 ## What does it do?
 
-helper.js consists of a collection of helper functions aimed at simplifying and streamlining JavaScript development.
+helper.js is a starting point for every website. The file takes care off repetitive JavaScript and simplifies it down to one function so you can make your dream projects sooner.
 
-Built to help you streamlime code and start your dream projects sooner.
+It consists of a collection of helper functions aimed at simplifying and streamlining JavaScript development.
 
 It offers the following functionalities:
 
@@ -31,6 +31,7 @@ It offers the following functionalities:
 * Efficiency: Save time and effort by utilizing pre-built helper functions for common tasks, eliminating the need to rewrite repetitive code segments.
 * Consistency: Ensures your codebase is consistent, helping with maintainability and allowing for easier contributions
 * Robust: Fully tested and designed to handle any use case you'd need for these functions
+* Small: A minified file is included (to do)
 
 <br>
 
