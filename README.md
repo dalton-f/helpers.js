@@ -46,14 +46,6 @@ All notable changes to this project will be documented here.
 
 <br>
 
-## Usage
-
-To download and use.. (to do)
-
-For information about the syntax of the functions, please visit the DOCUMENTATION.md file or read through extensive comments within helpers.js.
-
-<br>
-
 ## Contributing
 
 Contributions to this helper function library are warmly welcomed and highly valued. 
