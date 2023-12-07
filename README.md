@@ -2,7 +2,7 @@
 
 <br>
 
-Streamline code, simplify solutions
+> Streamline code, simplify solutions
 
 <br>
 
