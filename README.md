@@ -10,7 +10,14 @@
 
 ## Download
 
-to do
+You can download the helper.js [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
+
+
+**Or you can add the following to your html code:**
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
+```
 
 ## What does it do?
 
