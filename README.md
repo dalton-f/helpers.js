@@ -1,14 +1,23 @@
 # helpers.js
 
-<br>
+<img src="https://github.com/Arisamiga/helpers.js/assets/64918822/4dade6ce-4b5e-430a-8113-81129ea89d4e" alt="Logo" style="width:200px;" align="right"/>
 
 > Streamline code, simplify solutions
+
+![GitHub issues](https://img.shields.io/github/issues/dalton-f/helpers.js?color=%23f0db4f) ![Licence](https://img.shields.io/github/license/dalton-f/helpers.js?color=%23f0db4f)
 
 <br>
 
 ## Download
 
-to do
+You can download the helper.js [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
+
+
+**Or you can add the following to your html code:**
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
+```
 
 ## What does it do?
 
