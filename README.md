@@ -13,7 +13,7 @@
 You can download the helper.js [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
 
 
-**Or you can add the following to your HTML code: *
+### CDN:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
