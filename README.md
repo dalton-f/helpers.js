@@ -2,13 +2,12 @@
 
 <img src="https://github.com/Arisamiga/helpers.js/assets/64918822/4dade6ce-4b5e-430a-8113-81129ea89d4e" alt="Logo" style="width:200px;" align="right"/>
 
-> Streamline code, simplify solutions
-
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+
+> Streamline code, simplify solutions
 
 <br>
 
