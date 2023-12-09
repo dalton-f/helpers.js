@@ -10,10 +10,9 @@
 
 ## Download
 
-You can download the helper.js [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
+You can download the helpers.js file [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
 
-
-### CDN:
+or add the following code to your pages:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
