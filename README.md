@@ -4,7 +4,11 @@
 
 > Streamline code, simplify solutions
 
-![GitHub issues](https://img.shields.io/github/issues/dalton-f/helpers.js?color=%23f0db4f) ![Licence](https://img.shields.io/github/license/dalton-f/helpers.js?color=%23f0db4f)
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
 <br>
 
