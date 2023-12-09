@@ -54,3 +54,13 @@ Contributions to this helper function library are warmly welcomed and highly val
 Whether it's fixing a bug, enhancing existing functionalities, or introducing new helper functions that could benefit the community, your contributions play a pivotal role in enriching this project. 
 
 Please feel free to fork the repository, make changes, and submit pull requests. 
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/dalton-f/helpers.js.svg?style=for-the-badge
+[contributors-url]: https://github.com/dalton-f/helpers.js/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dalton-f/helpers.js.svg?style=for-the-badge
+[forks-url]: https://github.com/dalton-f/helpers.js/network/members
+[stars-shield]: https://img.shields.io/github/stars/dalton-f/helpers.js.svg?style=for-the-badge
+[stars-url]: https://github.com/dalton-f/helpers.js/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dalton-f/helpers.js.svg?style=for-the-badge
+[issues-url]: https://github.com/dalton-f/helpers.js/issues
