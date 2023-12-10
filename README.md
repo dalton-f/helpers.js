@@ -1,5 +1,7 @@
 # helpers.js
 
+> Streamline code, simplify solutions
+
 <img src="https://github.com/Arisamiga/helpers.js/assets/64918822/4dade6ce-4b5e-430a-8113-81129ea89d4e" alt="Logo" style="width:200px;" align="right"/>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -7,15 +9,11 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> Streamline code, simplify solutions
-
-<br>
-
-## Download
+**Download**
 
 You can download the helpers.js file [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
 
-or add the following code to your pages:
+**CDN**
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
