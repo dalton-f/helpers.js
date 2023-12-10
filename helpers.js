@@ -1,19 +1,27 @@
-function getById(id) {
-  return document.getElementById(id);
-}
+// helpers.js v1.2.0 | https://github.com/dalton-f/helpers.js
 
-function getMany(selector) {
-  return document.querySelectorAll(selector);
-}
+getById = (id) => document.getElementById(id);
 
-function getOne(selector) {
-  return document.querySelector(selector);
-}
+getMany = (selector) => document.querySelectorAll(selector);
 
-function addClass(element, classes) {
-  return element.classList.add(classes);
-}
+getOne = (selector) => document.querySelector(selector);
 
-function removeClass(element, classes) {
-  return element.classList.remove(classes);
-}
+addClass = (element, classes) => element.classList.add(classes);
+
+removeClass = (element, classes) => element.classList.remove(classes);
+
+toggleClass = (element, classes) => element.classList.toggle(classes);
+
+getInnerText = (element) => element.innerText;
+
+getInnerHTML = (element) => element.innerHTML;
+
+getLocalStorage = (key) => localStorage.getItem(key);
+
+setLocalStorage = (key, value) => localStorage.setItem(key, value);
+
+getTotal = (array) =>
+  (sum = array.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  ));
