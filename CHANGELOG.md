@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented here.
 
-### Version 1.1 - 09/12/2023
+### Version 1.1.0 - 09/12/2023
 
 * Updated README with download methods (thans to Arisamiga for contributing)
 
