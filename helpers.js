@@ -1,4 +1,4 @@
-// helpers.js v1.2.0 | https://github.com/dalton-f/helpers.js
+// helpers.js v1.3.0 | https://github.com/dalton-f/helpers.js
 
 getById = (id) => document.getElementById(id);
 
