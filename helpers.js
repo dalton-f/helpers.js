@@ -32,10 +32,6 @@ setInnerText = (element, text) => element.innerText = text;
 
 setInnerHTML = (element, html) => element.innerHTML = html;
 
-getInnerHTML = (element) => element.innerHTML;
-
-getInnerText = (element) => element.innerText;
-
 removeLocalStorage = (key) => localStorage.removeItem(key);
 
 clearLocalStorage = () => localStorage.clear();
