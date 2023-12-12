@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented here.
 
+### Version 1.3.0 - 11/12/2023
+
+* Additional functions added for controlling localStorage and setting innerHTML
+
 ### Version 1.2.0 - 10/12/2023
 
 * Added new set of helper functions
