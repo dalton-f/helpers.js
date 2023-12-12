@@ -25,3 +25,13 @@ getTotal = (array) =>
     (accumulator, currentValue) => accumulator + currentValue,
     0
   ));
+
+hasClass = (element, className) => element.classList.contains(className);
+
+setInnerText = (element, text) => element.innerText = text;
+
+setInnerHTML = (element, html) => element.innerHTML = html;
+
+removeLocalStorage = (key) => localStorage.removeItem(key);
+
+clearLocalStorage = () => localStorage.clear();
