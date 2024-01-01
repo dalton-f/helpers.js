@@ -1,7 +1,5 @@
 // helpers.js v1.3.0 | https://github.com/dalton-f/helpers.js
 
-// DOM Manipulation
-
 getById = (id) => document.getElementById(id);
 
 getMany = (selector) => document.querySelectorAll(selector);

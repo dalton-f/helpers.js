@@ -7,15 +7,11 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-> Streamline code, simplify solutions
-
-<br>
-
-## Download
+**Download**
 
 You can download the helpers.js file [here](https://raw.githubusercontent.com/dalton-f/helpers.js/main/helpers.js).
 
-or add the following code to your pages:
+**CDN**
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/dalton-f/helpers.js@main/helpers.js"></script>
