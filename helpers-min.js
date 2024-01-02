@@ -13,6 +13,6 @@
   (setLocalStorage = (e, t) => localStorage.setItem(e, t)),
   (clearLocalStorage = () => localStorage.clear()),
   (getTotal = (e) => (sum = e.reduce((e, t) => e + t, 0))),
-  (getMax = (e) => e.reduce((e, t) => Math.max(e, t), -1 / 0)),
-  (getMin = (e) => e.reduce((e, t) => Math.min(e, t), -1 / 0)),
+  (getMax = (e) => Math.max(...e)),
+  (getMin = (e) => Math.min(...e)),
   (getUniqueValues = (e) => [...new Set(e)]);

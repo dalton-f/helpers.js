@@ -1,4 +1,4 @@
-// helpers.js v1.3.0 | https://github.com/dalton-f/helpers.js
+// helpers.js v1.3.1 | https://github.com/dalton-f/helpers.js
 
 getById = (id) => document.getElementById(id);
 
@@ -38,8 +38,8 @@ getTotal = (array) =>
     0
   ));
 
-getMax = (array) => array.reduce((max, item) => Math.max(max, item), -Infinity);
+getMax = (array) => Math.max(...array);
 
-getMin = (array) => array.reduce((max, item) => Math.min(max, item), -Infinity);
+getMin = (array) => Math.min(...array);
 
 getUniqueValues = (array) => [...new Set(array)];
