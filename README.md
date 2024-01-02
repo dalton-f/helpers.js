@@ -38,7 +38,7 @@ It offers the following functionalities:
 * Efficiency: Save time and effort by utilizing pre-built helper functions for common tasks, eliminating the need to rewrite repetitive code segments.
 * Consistency: Ensures your codebase is consistent, helping with maintainability and allowing for easier contributions
 * Robust: Fully tested and designed to handle any use case you'd need for these functions
-* Small: A minified file is included (to do)
+* Small: A minified file is included
 
 <br>
 
