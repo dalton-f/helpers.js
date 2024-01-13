@@ -1,4 +1,4 @@
-// helpers.js v1.3.1 | https://github.com/dalton-f/helpers.js
+// helpers.js v1.4.0 | https://github.com/dalton-f/helpers.js
 
 getById = (id) => document.getElementById(id);
 
@@ -21,6 +21,18 @@ getInnerHTML = (element) => element.innerHTML;
 setInnerText = (element, text) => (element.innerText = text);
 
 setInnerHTML = (element, html) => (element.innerHTML = html);
+
+createElement = (tagName) => document.createElement(tagName);
+
+removeChild = (element) => element.parentNode.removeChild(element);
+
+getParent = (element) => element.parentElement;
+
+getChildren = (element) => element.children;
+
+getNextSibling = (element) => element.nextElementSibling;
+
+getPrevSibling = (element) => element.previousElementSibling;
 
 // Storage
 
