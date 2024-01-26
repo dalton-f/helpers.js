@@ -1,4 +1,4 @@
-// helpers.js v1.4.0 | https://github.com/dalton-f/helpers.js
+// helpers.js v1.4.1 | https://github.com/dalton-f/helpers.js
 
 getById = (id) => document.getElementById(id);
 
@@ -6,11 +6,11 @@ getMany = (selector) => document.querySelectorAll(selector);
 
 getOne = (selector) => document.querySelector(selector);
 
-addClass = (element, classes) => element.classList.add(classes);
+addClass = (element, classes) => element.classList.add(...classes);
 
-removeClass = (element, classes) => element.classList.remove(classes);
+removeClass = (element, classes) => element.classList.remove(...classes);
 
-toggleClass = (element, classes) => element.classList.toggle(classes);
+toggleClass = (element, classes) => element.classList.toggle(...classes);
 
 hasClass = (element, classes) => element.classList.contains(classes);
 
@@ -24,15 +24,15 @@ setInnerHTML = (element, html) => (element.innerHTML = html);
 
 createElement = (tagName) => document.createElement(tagName);
 
-removeChild = (element) => element.parentNode.removeChild(element);
+deleteElement = (element) => element.remove();
 
-getParent = (element) => element.parentElement;
+getParent = (element) => element.parentNode;
 
 getChildren = (element) => element.children;
 
-getNextSibling = (element) => element.nextElementSibling;
+getNextSibling = (element) => element.nextSibling;
 
-getPrevSibling = (element) => element.previousElementSibling;
+getPrevSibling = (element) => element.previousSibling;
 
 // Storage
 
