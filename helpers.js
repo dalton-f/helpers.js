@@ -1,34 +1,29 @@
-// helpers.js
+// helpers.js https://github.com/dalton-f/helpers.js
 
 // DOM Manipulation Helpers
-
-/**
- * Get an element by its ID.
- * @param {string} id - The ID of the element to retrieve.
- * @returns {HTMLElement} The element with the specified ID.
- */
-const getById = (id) => document.getElementById(id);
 
 /**
  * Get all elements matching a CSS selector.
  * @param {string} selector - The CSS selector to match elements.
  * @returns {NodeList} A NodeList of matching elements.
  */
-const getMany = (selector) => document.querySelectorAll(selector);
+export const findMany = (selector, context = document) =>
+  context.querySelectorAll(selector);
 
 /**
  * Get the first element matching a CSS selector.
  * @param {string} selector - The CSS selector to match the element.
  * @returns {HTMLElement} The first matching element.
  */
-const getOne = (selector) => document.querySelector(selector);
+export const find = (selector, context = document) =>
+  context.querySelector(selector);
 
 /**
  * Add one or more classes to an element.
  * @param {HTMLElement} element - The element to which the class(es) will be added.
  * @param {string|string[]} classes - The class or array of classes to add.
  */
-const addClass = (element, classes) => {
+export const addClass = (element, classes) => {
   if (typeof classes === "string") {
     classes = [classes];
   }
@@ -40,7 +35,7 @@ const addClass = (element, classes) => {
  * @param {HTMLElement} element - The element from which the class(es) will be removed.
  * @param {string|string[]} classes - The class or array of classes to remove.
  */
-const removeClass = (element, classes) => {
+export const removeClass = (element, classes) => {
   if (typeof classes === "string") {
     classes = [classes];
   }
@@ -52,11 +47,16 @@ const removeClass = (element, classes) => {
  * @param {HTMLElement} element - The element on which the class(es) will be toggled.
  * @param {string|string[]} classes - The class or array of classes to toggle.
  */
-const toggleClass = (element, classes) => {
+export const toggleClass = (element, classes, force = null) => {
   if (typeof classes === "string") {
     classes = [classes];
   }
-  classes.forEach((cls) => element.classList.toggle(cls));
+
+  if (force) {
+    classes.forEach((cls) => element.classList.toggle(cls, force));
+  } else {
+    classes.forEach((cls) => element.classList.toggle(cls));
+  }
 };
 
 /**
@@ -65,7 +65,8 @@ const toggleClass = (element, classes) => {
  * @param {string} className - The class name to check for.
  * @returns {boolean} True if the element has the class, false otherwise.
  */
-const hasClass = (element, className) => element.classList.contains(className);
+export const hasClass = (element, className) =>
+  element.classList.contains(className);
 
 // Element Content Manipulation
 
@@ -74,28 +75,28 @@ const hasClass = (element, className) => element.classList.contains(className);
  * @param {HTMLElement} element - The element to retrieve inner text from.
  * @returns {string} The inner text of the element.
  */
-const getInnerText = (element) => element.innerText;
+export const getInnerText = (element) => element.innerText;
 
 /**
  * Get the inner HTML of an element.
  * @param {HTMLElement} element - The element to retrieve inner HTML from.
  * @returns {string} The inner HTML of the element.
  */
-const getInnerHTML = (element) => element.innerHTML;
+export const getInnerHTML = (element) => element.innerHTML;
 
 /**
  * Set the inner text of an element.
  * @param {HTMLElement} element - The element to set inner text on.
  * @param {string} text - The text to set as inner text.
  */
-const setInnerText = (element, text) => (element.innerText = text);
+export const setInnerText = (element, text) => (element.innerText = text);
 
 /**
  * Set the inner HTML of an element.
  * @param {HTMLElement} element - The element to set inner HTML on.
  * @param {string} html - The HTML content to set as inner HTML.
  */
-const setInnerHTML = (element, html) => (element.innerHTML = html);
+export const setInnerHTML = (element, html) => (element.innerHTML = html);
 
 // Element Creation and Deletion
 
@@ -104,13 +105,13 @@ const setInnerHTML = (element, html) => (element.innerHTML = html);
  * @param {string} tagName - The tag name of the element to create.
  * @returns {HTMLElement} The newly created element.
  */
-const createElement = (tagName) => document.createElement(tagName);
+export const createElement = (tagName) => document.createElement(tagName);
 
 /**
  * Remove an element from the DOM.
  * @param {HTMLElement} element - The element to remove.
  */
-const deleteElement = (element) => element.remove();
+export const deleteElement = (element) => element.remove();
 
 // DOM Traversal
 
@@ -119,28 +120,28 @@ const deleteElement = (element) => element.remove();
  * @param {HTMLElement} element - The element to retrieve the parent of.
  * @returns {HTMLElement} The parent element.
  */
-const getParent = (element) => element.parentNode;
+export const getParent = (element) => element.parentNode;
 
 /**
  * Get the child elements of a given element.
  * @param {HTMLElement} element - The element to retrieve children from.
  * @returns {HTMLCollection} The child elements.
  */
-const getChildren = (element) => element.children;
+export const getChildren = (element) => element.children;
 
 /**
  * Get the next sibling of a given element.
  * @param {HTMLElement} element - The element to retrieve the next sibling of.
  * @returns {Node} The next sibling element.
  */
-const getNextSibling = (element) => element.nextSibling;
+export const getNextSibling = (element) => element.nextSibling;
 
 /**
  * Get the previous sibling of a given element.
  * @param {HTMLElement} element - The element to retrieve the previous sibling of.
  * @returns {Node} The previous sibling element.
  */
-const getPrevSibling = (element) => element.previousSibling;
+export const getPrevSibling = (element) => element.previousSibling;
 
 // Local Storage Helpers
 
@@ -149,19 +150,19 @@ const getPrevSibling = (element) => element.previousSibling;
  * @param {string} key - The key of the item to retrieve.
  * @returns {string|null} The value of the item in local storage, or null if not found.
  */
-const getLocalStorage = (key) => localStorage.getItem(key);
+export const getLocalStorage = (key) => localStorage.getItem(key);
 
 /**
  * Set an item in local storage with a key and value.
  * @param {string} key - The key under which to store the item.
  * @param {string} value - The value to store in local storage.
  */
-const setLocalStorage = (key, value) => localStorage.setItem(key, value);
+export const setLocalStorage = (key, value) => localStorage.setItem(key, value);
 
 /**
  * Clear all items from local storage.
  */
-const clearLocalStorage = () => localStorage.clear();
+export const clearLocalStorage = () => localStorage.clear();
 
 // Attribute Manipulation
 
@@ -171,14 +172,15 @@ const clearLocalStorage = () => localStorage.clear();
  * @param {string} attribute - The name of the attribute to retrieve.
  * @returns {string|null} The value of the attribute, or null if not found.
  */
-const getAttribute = (element, attribute) => element.getAttribute(attribute);
+export const getAttribute = (element, attribute) =>
+  element.getAttribute(attribute);
 
 /**
  * Remove a specific attribute from an element.
  * @param {HTMLElement} element - The element to remove the attribute from.
  * @param {string} attribute - The name of the attribute to remove.
  */
-const removeAttribute = (element, attribute) =>
+export const removeAttribute = (element, attribute) =>
   element.removeAttribute(attribute);
 
 // Child Management
@@ -188,14 +190,14 @@ const removeAttribute = (element, attribute) =>
  * @param {HTMLElement} parent - The parent element.
  * @param {HTMLElement} child - The child element to append.
  */
-const appendChild = (parent, child) => parent.appendChild(child);
+export const appendChild = (parent, child) => parent.appendChild(child);
 
 /**
  * Prepend a child element to a parent element.
  * @param {HTMLElement} parent - The parent element.
  * @param {HTMLElement} child - The child element to prepend.
  */
-const prependChild = (parent, child) =>
+export const prependChild = (parent, child) =>
   parent.insertBefore(child, parent.firstChild);
 
 // Array Utilities
@@ -205,39 +207,36 @@ const prependChild = (parent, child) =>
  * @param {number[]} array - The array of numbers to sum.
  * @returns {number} The total sum of the array values.
  */
-const getTotal = (array) =>
-  (sum = array.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  ));
+export const getTotal = (array) =>
+  array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 /**
  * Get the maximum value in an array.
  * @param {number[]} array - The array to find the maximum value in.
  * @returns {number} The maximum value in the array.
  */
-const getMax = (array) => Math.max(...array);
+export const getMax = (array) => Math.max(...array);
 
 /**
  * Get the minimum value in an array.
  * @param {number[]} array - The array to find the minimum value in.
  * @returns {number} The minimum value in the array.
  */
-const getMin = (array) => Math.min(...array);
+export const getMin = (array) => Math.min(...array);
 
 /**
  * Get an array of unique values from the input array.
  * @param {any[]} array - The array to retrieve unique values from.
  * @returns {any[]} An array of unique values.
  */
-const getUniqueValues = (array) => [...new Set(array)];
+export const getUniqueValues = (array) => [...new Set(array)];
 
 /**
  * Flatten an array of nested arrays into a single array.
  * @param {any[]} array - The array to flatten.
  * @returns {any[]} The flattened array.
  */
-const flattenArray = (array) => array.flat(Infinity);
+export const flattenArray = (array) => array.flat(Infinity);
 
 // Event Management
 
@@ -247,7 +246,7 @@ const flattenArray = (array) => array.flat(Infinity);
  * @param {string} event - The event type to listen for.
  * @param {Function} callback - The callback function to invoke when the event occurs.
  */
-const addEvent = (context = document, event, callback) =>
+export const on = (context = document, event, callback) =>
   context.addEventListener(event, callback);
 
 /**
@@ -256,5 +255,5 @@ const addEvent = (context = document, event, callback) =>
  * @param {string} event - The event type to remove.
  * @param {Function} callback - The callback function that was used to add the event listener.
  */
-const removeEvent = (context = document, event, callback) =>
+export const off = (context = document, event, callback) =>
   context.removeEventListener(event, callback);
